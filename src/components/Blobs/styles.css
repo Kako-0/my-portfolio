@@ -6,7 +6,6 @@
   overflow: hidden;
   border-top: 15px solid black;
   border-bottom: 15px solid black;
-
   filter: url("#goo");
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
@@ -15,20 +14,17 @@
   border-color: black;
   background: black;
   position: absolute;
-  top: -100%;
+  top: 100%;
   animation: falling 10s linear infinite;
 }
 @keyframes falling {
   0% {
-    top: -100%;
+    top: 150%;
   }
-  60% {
-    top: 0%;
-  }
-  80% {
+  60%{
     top: 80%;
   }
   100% {
-    top: 100%;
+    top: -100%;
   }
 }

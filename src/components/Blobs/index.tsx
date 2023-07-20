@@ -15,10 +15,10 @@ function Blobs() {
   const [blobs, setBlobs] = useState<BlobArray[]>([]);
 
   useEffect(() => {
-    const size = ["100", "250", "320"];
+    const size = ["60", "100", "180", "210", "320"];
 
     const createRandomBalls = () => {
-      const numberOfBalls = 20;
+      const numberOfBalls = 35;
 
       const newBalls = Array.from({ length: numberOfBalls }, (_, index) => {
         const sizeBlob = `${size.at(Math.random() * size.length)}px`;
