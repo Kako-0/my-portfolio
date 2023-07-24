@@ -1,11 +1,13 @@
 .cont {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   position: absolute;
-  top: 0;
+  top: 4rem;
   overflow: hidden;
-  border-top: 15px solid black;
-  border-bottom: 15px solid black;
+  z-index: -1;
+  
+  border-bottom: 10px solid black;
+  border-top: 10px solid black;
   filter: url("#goo");
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
