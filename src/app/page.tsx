@@ -4,14 +4,14 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="flex flex-col items-start w-full h-[85vh] relative p-40">
-        <div className="grid gap-4 place-items-start p-8 bg-blue-200 rounded-xl bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 border border-gray-100">
-          <h1 className=" font-extrabold text-5xl tracking-wide">
+      <main className="flex flex-col items-start w-full h-[85vh] relative md:p-40 bg-transparent">
+        <div className="grid gap-4 place-items-start p-8">
+          <h1 className="font-extrabold text-4xl md:text-5xl tracking-wide">
             Olá, <br />
             Eu sou <span className="text-blue-900">Kayro França</span>. <br />
             Um desenvolvedor web focado em frontend.
           </h1>
-          <h2 className=" font-bold text-3xl"></h2>
+          <h2 className="font-bold text-3xl"></h2>
         </div>
       </main>
     </>
