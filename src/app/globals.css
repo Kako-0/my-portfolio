@@ -2,18 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-}
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
-
 body {
-  /* @apply bg-gradient-to-r from-slate-900 to-slate-700; */
   @apply bg-gradient-to-tl from-neutral-100 to-zinc-200 max-h-full;
 }
