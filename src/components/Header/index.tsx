@@ -1,9 +1,13 @@
 "use client";
 import { rozha } from "@/app/fonts";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import "./styles.css";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [sticky, setSticky] = useState({ isSticky: false, offset: 0 });
+  const headerRef = useRef<HTMLDivElement>(null);
+
   const open = () => {
     const hamburguer = document.getElementById("navbar-solid-bg");
     setIsOpen((prev) => !prev);
@@ -13,8 +17,37 @@ function Header() {
       : hamburguer!.classList.add("hidden");
   };
 
+  // handle scroll event
+  const handleScroll = (elTopOffset: number, elHeight: number) => {
+    if (window.scrollY > elTopOffset + elHeight) {
+      setSticky({ isSticky: true, offset: elHeight });
+    } else {
+      setSticky({ isSticky: false, offset: 0 });
+    }
+  };
+
+  // add/remove scroll event listener
+  useEffect(() => {
+    var header: DOMRect;
+    if (headerRef.current) header = headerRef.current.getBoundingClientRect();
+    const handleScrollEvent = () => {
+      handleScroll(header.top, header.height);
+    };
+
+    window.addEventListener("scroll", handleScrollEvent);
+
+    return () => {
+      window.removeEventListener("scroll", handleScrollEvent);
+    };
+  }, []);
+
   return (
-    <header className="text-white w-full border-b border-gray-300">
+    <header
+      className={`bg-zinc-200 text-white w-full border-b border-gray-300 ${
+        sticky.isSticky ? " sticky" : ""
+      }`}
+      ref={headerRef}
+    >
       <nav className="border-gray-900">
         <div className=" flex flex-wrap items-center justify-between mx-auto py-2 px-16">
           <a href="#" className="flex items-center">
