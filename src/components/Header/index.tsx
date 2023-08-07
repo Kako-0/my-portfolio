@@ -2,6 +2,7 @@
 import { rozha } from "@/app/fonts";
 import React, { useEffect, useRef, useState } from "react";
 import "./styles.css";
+import Link from "next/link";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,20 +44,20 @@ function Header() {
 
   return (
     <header
-      className={`bg-zinc-200 text-white w-full border-b border-gray-300 ${
+      className={`bg-slate-200 text-white w-full border-b border-gray-300 ${
         sticky.isSticky ? " sticky" : ""
       }`}
       ref={headerRef}
     >
       <nav className="border-gray-900">
         <div className=" flex flex-wrap items-center justify-between mx-auto py-2 px-16">
-          <a href="#" className="flex items-center">
+          <Link href="#" className="flex items-center">
             <span
               className={`${rozha.className} self-center text-2xl font-semibold whitespace-nowrap text-neutral-950`}
             >
               K.dev
             </span>
-          </a>
+          </Link>
           <button
             onClick={() => open()}
             data-collapse-toggle="navbar-solid-bg"
@@ -87,38 +88,38 @@ function Header() {
             id="navbar-solid-bg"
           >
             <ul className="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:flex-row md:mt-0 md:border-0 md:bg-transparent ">
-              <li className="border-r-2 border-neutral-200 px-3">
-                <a
+              <li className="border-r-2 border-blue-900 px-3">
+                <Link
                   href="#"
-                  className="block py-2 pl-3 pr-4 text-white bg-blue-900 rounded md:bg-transparent md:text-blue-900 md:p-0 "
+                  className="block py-2 pl-3 pr-4 text-neutral-950 rounded md:bg-transparent md:p-0 "
                   aria-current="page"
                 >
                   Inicio
-                </a>
+                </Link>
               </li>
-              <li className="border-r-2 border-neutral-200 px-3">
-                <a
-                  href="#"
+              <li className="border-r-2 border-blue-900 px-3">
+                <Link
+                  href="#sobre"
                   className="block py-2 pl-3 pr-4 text-neutral-950 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                 >
                   Sobre
-                </a>
+                </Link>
               </li>
-              <li className="border-r-2 border-neutral-200 px-3">
-                <a
+              <li className="border-r-2 border-blue-900 px-3">
+                <Link
                   href="#projetos"
                   className="block py-2 pl-3 pr-4 text-neutral-950 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                 >
                   Projetos
-                </a>
+                </Link>
               </li>
               <li className="px-3">
-                <a
-                  href="#"
+                <Link
+                  href="#contato"
                   className="block py-2 pl-3 pr-4 text-neutral-950 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                 >
                   Contato
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
