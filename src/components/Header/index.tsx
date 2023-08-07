@@ -51,7 +51,7 @@ function Header() {
     >
       <nav className="border-gray-900">
         <div className=" flex flex-wrap items-center justify-between mx-auto py-2 px-16">
-          <Link href="#" className="flex items-center">
+          <Link href="#inicio" className="flex items-center">
             <span
               className={`${rozha.className} self-center text-2xl font-semibold whitespace-nowrap text-neutral-950`}
             >
@@ -90,8 +90,8 @@ function Header() {
             <ul className="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:flex-row md:mt-0 md:border-0 md:bg-transparent ">
               <li className="border-r-2 border-blue-900 px-3">
                 <Link
-                  href="#"
-                  className="block py-2 pl-3 pr-4 text-neutral-950 rounded md:bg-transparent md:p-0 "
+                  href="#inicio"
+                  className="block py-2 pl-3 pr-4 text-neutral-950 rounded md:bg-transparent md:hover:text-blue-700 md:p-0 "
                   aria-current="page"
                 >
                   Inicio

@@ -8,7 +8,10 @@ export default function Home() {
     <>
       <Header />
       <main className="flex flex-col gap-12 items-start w-full py-24 px-16 md:p-8 md:px-64">
-        <section className="grid gap-4 place-items-center h-[90vh] w-full">
+        <section
+          className="grid gap-4 place-items-center h-[90vh] w-full"
+          id="inicio"
+        >
           <h1
             className={`font-bold italic text-2xl md:text-5xl tracking-wide ${ibmSerif.className}`}
           >
