@@ -6,6 +6,9 @@ export default function Projetos() {
       <h3 className="font-bold text-3xl">Projetos</h3>
 
       <Item />
+      <Item />
+      <Item />
+      <Item />
     </section>
   );
 }
