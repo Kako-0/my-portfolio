@@ -3,5 +3,13 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gradient-to-tl from-neutral-100 to-zinc-200 max-h-full;
+  @apply bg-gradient-to-br from-slate-100 via-gray-100 to-zinc-100 max-h-full;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 8rem;
 }
