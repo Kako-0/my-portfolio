@@ -12,16 +12,10 @@ export default function Item() {
           você compartilhar a sua história com os visitantes.
         </p>
         <div className="mt-6 flex gap-4">
-          <button
-            type="button"
-            className="text-white bg-blue-900 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none"
-          >
+          <button type="button" className="btn">
             Github
           </button>
-          <button
-            type="button"
-            className="text-white bg-blue-900 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none"
-          >
+          <button type="button" className="btn">
             Website
           </button>
         </div>
