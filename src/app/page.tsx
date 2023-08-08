@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="flex flex-col gap-12 items-start w-full py-24 px-16 md:p-8 md:px-64">
+      <main className="flex flex-col gap-12 items-start w-full">
         <section
-          className="grid gap-4 place-items-center h-[90vh] w-full"
+          className="grid gap-4 place-items-center h-[95vh] w-full pad-default"
           id="inicio"
         >
           <h1
