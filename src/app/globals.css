@@ -6,10 +6,31 @@ body {
   @apply bg-gradient-to-br from-slate-100 via-gray-100 to-zinc-100 max-h-full;
 }
 
-html {
-  scroll-behavior: smooth;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  p {
+    @apply mb-4;
+  }
+  section {
+    scroll-margin-top: 6rem;
+  }
 }
 
-section {
-  scroll-margin-top: 8rem;
+@layer utilities {
+  .clip-polygon {
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
+  }
+
+  .pad-default {
+    @apply py-24 px-16 md:p-8 md:px-64;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply text-white bg-blue-900 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none;
+  }
 }
