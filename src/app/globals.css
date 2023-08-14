@@ -35,21 +35,21 @@ body {
 	}
 
 	.btn-filled {
-		@apply text-neutral-100 text-sm font-medium rounded-full bg-blue-900 px-5 py-2.5 mr-2 mb-2 transition-all duration-300
-       hover:elev hover:opacity-95 
+		@apply text-neutral-100 text-sm font-medium rounded-full bg-blue-800 px-5 py-2.5 mr-2 mb-2 transition-all duration-300
+       hover:elev hover:opacity-95 hover:bg-blue-900
        focus:opacity-80 focus:outline-0 
        active:bg-blue-950 active:focus:opacity-100 active:focus:outline-0;
 	}
 	.btn-tonal {
 		@apply text-neutral-900 text-sm font-medium rounded-full bg-blue-200 px-5 py-2.5 mr-2 mb-2 transition-all duration-300
-    hover:elev hover:opacity-95 
+    hover:elev hover:opacity-90 hover:bg-blue-300
     focus:opacity-80 focus:outline-0 
-    active:bg-blue-300 active:focus:opacity-100 active:focus:outline-0;
+    active:bg-blue-400 active:focus:opacity-100 active:focus:outline-0;
 	}
 
 	.btn-outlined {
 		@apply text-blue-900 text-sm font-medium rounded-full border border-blue-900 px-5 py-2.5 mr-2 mb-2 transition-all duration-300
-    hover:bg-blue-100
+    hover:bg-blue-200
     focus:opacity-80 focus:outline-0 focus:bg-blue-100
     active:bg-blue-300 active:focus:opacity-100 active:focus:outline-0;
 	}
