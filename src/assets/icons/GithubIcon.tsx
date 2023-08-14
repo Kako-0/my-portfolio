@@ -2,12 +2,13 @@ export default function GithubIcon() {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			shape-rendering="geometricPrecision"
-			text-rendering="geometricPrecision"
-			image-rendering="optimizeQuality"
-			fill-rule="evenodd"
-			className="w-[24px] h-[24px]"
-			clip-rule="evenodd"
+			shapeRendering="geometricPrecision"
+			textRendering="geometricPrecision"
+			imageRendering="optimizeQuality"
+			fillRule="evenodd"
+			width="24px"
+			height="24px"
+			clipRule="evenodd"
 			fill="currentColor"
 			viewBox="0 0 640 640"
 		>
